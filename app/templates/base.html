@@ -1,0 +1,22 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{{title}}{% endblock %}</title>
+    {% block css %} {% endblock %}
+</head>
+
+<body id="page-top">
+    {% block header %} {% include "header.html" %} {% endblock %} {% block content %} {% endblock %} {% block script %}
+    <!-- load custom js -->
+    {% endblock %}
+
+</body>
+
+</html>
